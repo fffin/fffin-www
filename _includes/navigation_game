@@ -12,8 +12,8 @@
 {% endfor %}
 
 {% if page.group == game_code %}
-<li>
-    <ul>
+            <li>
+                <ul>
         {% for p in site.pages %}
             {% if p.group == game_code %}
                 {% if p.url == page.url %}
@@ -23,8 +23,8 @@
                 {% endif %}
             {% endif %}
         {% endfor %}
-    </ul>
-</li>
+                </ul>
+            </li>
 {% endif %}
 
 {% assign game = nil %}

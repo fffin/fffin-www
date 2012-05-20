@@ -1,0 +1,24 @@
+<ul>
+	<li><a href="{{ HOME_PATH }}">{{ site.title }}</a></li>
+	<ul>
+		{% assign pages_list = site.pages %}
+		{% assign group = 'navigation' %}
+		{% include JB/pages_list %}
+	</ul>
+	<li><a href="{{ BASE_PATH }}/ff1/">Final Fantasy I</a></li>
+	<ul>
+		{% if page.group == "ff1" %}
+			{% assign pages_list = site.pages %}
+			{% assign group = "ff1" %}
+			{% include JB/pages_list %}
+		{% endif %}
+	</ul>
+	<li><a href="{{ BASE_PATH }}/ff2/">Final Fantasy II</a></li>
+	<ul>
+		{% if page.group == "ff2" %}
+			{% assign pages_list = site.pages %}
+			{% assign group = "ff2" %}
+			{% include JB/pages_list %}
+		{% endif %}
+	</ul>
+</ul>

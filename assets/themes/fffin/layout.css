@@ -1,105 +1,116 @@
 body {
-	margin-top: 0;
-	margin-left: 25px;
-	margin-right: 25px;
-	background-color: #D9EEF1;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #D9EEF1;
 }
 
 #header {
-	clear: both;
-	float: left;
-	width: 100%;
-	height: 120px;
-	background-image: url(header-bg.png);
-	background-repeat: repeat-x;
-	background-position: top left;
-	background-color: #6798BB;
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-image: url(header-bg.png);
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-color: #6798BB;
 }
+
 #header-left {
-	width: 100%;
-	height: 100%;
-	background-image: url(header-left.png);
-	background-repeat: no-repeat;
-	background-position: top left;
+    width: 100%;
+    height: 100%;
+    background-image: url(header-left.png);
+    background-repeat: no-repeat;
+    background-position: top left;
 }
+
 #header-right {
-	width: 100%;
-	height: 100%;
-	background-image: url(header-right.png);
-	background-repeat: no-repeat;
-	background-position: top right;
+    width: 100%;
+    height: 100%;
+    background-image: url(header-right.png);
+    background-repeat: no-repeat;
+    background-position: top right;
 }
+
 img#header-center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
 }
 
 #middle-outer {
-	position: relative;
-	clear: both;
-	float: left;
-	width: 100%;
-	overflow: hidden;
-	background-color: #F0F0F0; /* navigation BG color */
+    position: relative;
+    clear: both;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F0F0F0; /* navigation BG color */
 }
+
 #middle-inner {
-	position: relative;
-	float: left;
-	width: 200%; /* enables "right: 100%" in #content */
-	left: 200px; /* navigation width */
-	background-color: #FFFFFF; /* content BG color */
+    position: relative;
+    float: left;
+    width: 200%; /* enables "right: 100%" in #content */
+    left: 200px; /* navigation width */
+    background-color: #FFFFFF; /* content BG color */
 }
+
 #content-alignment-reference {
-	position: relative;
-	float: right;
-	width: 50%; /* enables "right: 100%" in #content */
-	right: 200px; /* navigation width */
-	padding-bottom: 15px; /* content margin */
+    position: relative;
+    float: right;
+    width: 50%; /* enables "right: 100%" in #content */
+    right: 200px; /* navigation width */
+    padding-bottom: 15px; /* content margin */
 }
+
 #content {
-	position: relative;
-	right: 100%;
-	margin-left: 215px; /* navigation width + content margin */
-	margin-right: 15px; /* content margin */
-	overflow: hidden;
+    position: relative;
+    right: 100%;
+    margin-left: 215px; /* navigation width + content margin */
+    margin-right: 15px; /* content margin */
+    overflow: hidden;
 }
 
 #navigation {
-	position: relative;
-	float: left;
-	width: 200px; /* navigation width */
-	right: 200px; /* navigation width */
+    position: relative;
+    float: left;
+    width: 200px; /* navigation width */
+    right: 200px; /* navigation width */
 }
+
 #navigation ul {
-	list-style-type: none;
-	margin: auto;
-	margin-top: 0;
-	padding: 0;
-	background-color: #DCDCDC; /* navigation header BG color */
+    list-style-type: none;
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    background-color: #DCDCDC; /* navigation header BG color */
 }
+
 #navigation ul li {
-	padding-left: 5px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
+
 #navigation ul ul {
-	background-color: #F0F0F0; /* navigation BG color */
+    background-color: #F0F0F0; /* navigation BG color */
 }
+
 #navigation ul ul li {
-	padding-left: 10px;
-	padding-top: 0;
-	padding-bottom: 0;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
 #navigation .active {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 footer {
-	clear: both;
-	background-color: #F0F0F0; /* navigation BG color */
-	text-align: center;
-	padding: 2px;
-	font-size: 10pt;
+    clear: both;
+    background-color: #F0F0F0; /* navigation BG color */
+    text-align: center;
+    padding: 2px;
+    font-size: 10pt;
 }

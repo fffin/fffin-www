@@ -1,5 +1,5 @@
 <ul>
-    <li><a href="{{ HOME_PATH }}">{{ site.title }}</a></li>
+    <li>FFfin</li>
     <li>
         <ul>
             {% assign pages_list = site.pages %}
@@ -8,25 +8,13 @@
         </ul>
     </li>
 
-    <li><a href="{{ BASE_PATH }}/ff1/">Final Fantasy I</a></li>
+    <li>Pelit</li>
     <li>
         <ul>
-            {% if page.group == "ff1" %}
-            {% assign pages_list = site.pages %}
-            {% assign group = "ff1" %}
-            {% include JB/pages_list %}
-            {% endif %}
+            {% for game in site.games %}
+            {% include navigation_game %}
+            {% endfor %}
         </ul>
     </li>
 
-    <li><a href="{{ BASE_PATH }}/ff2/">Final Fantasy II</a></li>
-    <li>
-        <ul>
-            {% if page.group == "ff2" %}
-            {% assign pages_list = site.pages %}
-            {% assign group = "ff2" %}
-            {% include JB/pages_list %}
-            {% endif %}
-        </ul>
-    </li>
 </ul>

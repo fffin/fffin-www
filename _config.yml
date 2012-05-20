@@ -18,6 +18,25 @@ author:
   twitter: username
   feedburner: feedname
 
+# Games to show in the navigation menu. Child pages' groups must equal these codes.
+games:
+  ff1: Final Fantasy I
+  ff2: Final Fantasy II
+  ff3: Final Fantasy III
+  ff4: Final Fantasy IV
+  ff5: Final Fantasy V
+  ff6: Final Fantasy VI
+  ff7: Final Fantasy VII
+  ff8: Final Fantasy VIII
+  ff9: Final Fantasy IX
+  ff10: Final Fantasy X
+  ff10-2: Final Fantasy X-2
+  ff11: Final Fantasy XI
+  ff12: Final Fantasy XII
+  ffu: Final Fantasy Unlimited
+  kh: Kingdom Hearts
+  kokoelmat: Kokoelmat
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls

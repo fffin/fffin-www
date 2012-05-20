@@ -1,0 +1,32 @@
+{% assign game_code = game[0] %}
+{% assign game_title = game[1] %}
+
+{% for p in site.pages %}
+    {% if p.group == game_code and p.url contains '/index.html' %}
+        {% if p.group == page.group %}
+            <li class="active"><a href="{{ p.url }}">{{ game_title }}</a></li>
+        {% else %}
+            <li><a href="{{ p.url }}">{{ game_title }}</a></li>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% if page.group == game_code %}
+<li>
+    <ul>
+        {% for p in site.pages %}
+            {% if p.group == game_code %}
+                {% if p.url == page.url %}
+                    <li class="active"><a href="{{ p.url }}">{{ p.title }}</a></li>
+                {% else %}
+                    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</li>
+{% endif %}
+
+{% assign game = nil %}
+{% assign game_code = nil %}
+{% assign game_title = nil %}

@@ -1,27 +1,62 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
     <meta charset="utf-8">
-    <title>A Brand New nanoc Site - <%= @item[:title] %></title>
-    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    <meta name="generator" content="nanoc 3.3.6">
-  </head>
-  <body>
-    <div id="main">
-      <%= yield %>
+
+    <title><%= format_title(@item[:title]) %></title>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" media="all" href="/styles/layout.css">
+
+</head>
+<body>
+
+<div id="header">
+    <div id="header-left">
+        <div id="header-right">
+            <a href="/"><img id="header-center" src="/styles/header-center.png"></a>
+        </div>
     </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="http://nanoc.stoneship.org/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.stoneship.org/docs/3-getting-started/">Getting Started</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://projects.stoneship.org/trac/nanoc/">Wiki</a></li>
-      </ul>
+</div>
+
+<div id="middle-outer">
+    <div id="middle-inner">
+
+        <div id="content-alignment-reference">
+            <div id="content">
+                <%= yield %>
+            </div>
+        </div>
+
+        <div id="navigation">
+            <ul>
+                <li>FFfin</li>
+                <li>
+                    <ul>
+                        <li><a href="/">Uutiset</a></li>
+                        <li><a href="http://foorumit.fffin.com/">Foorumit</a></li>
+                    </ul>
+                </li>
+                <li>Pelit</li>
+                <li>
+                    <ul>
+                        <li><a href="/final-fantasy-i/index.html">Final Fantasy I</a></li>
+                        <li><a href="/final-fantasy-ii/index.html">Final Fantasy II</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
     </div>
-  </body>
+</div>
+
+<footer>
+    <p>Copyright © 2001-<%= Time.new.strftime('%Y') %> Final Fantasy Finland</p>
+</footer>
+
+</body>
 </html>

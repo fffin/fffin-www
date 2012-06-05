@@ -60,3 +60,23 @@ class Menu
     maybe_submenu.xpath("ul").size > 0 ? Menu.new(maybe_submenu) : nil
   end
 end
+
+def create_fake_site
+  root = Nanoc::Item.new('', {:title => 'Final Fantasy Finland', :navigation_title => 'Uutiset'}, '/')
+
+  faq = Nanoc::Item.new('', {:title => 'FAQ'}, '/faq/')
+  faq.parent = root
+  root.children << faq
+
+  ff1 = Nanoc::Item.new('', {:title => 'Final Fantasy I'}, '/ff1/')
+  ff1.parent = root
+  root.children << ff1
+
+  ff1_vinkit = Nanoc::Item.new('', {:title => 'Vinkit'}, '/ff1/vinkit/')
+  ff1_vinkit.parent = ff1
+  ff1.children << ff1_vinkit
+
+  @items = [root, faq, ff1, ff1_vinkit]
+  @items_by_identifier = {}
+  @items.each { |item| @items_by_identifier[item.identifier] = item }
+end

@@ -1,6 +1,23 @@
 require_relative 'test_helpers'
+require_relative '../lib/layout'
 
 describe "Navigation menu" do
+
+  before(:all) do
+    create_fake_site
+  end
+
+  it "always shows the top-level pages" do
+    @item = @items_by_identifier['/']
+    navigation_menu.should include "FAQ"
+    navigation_menu.should include "Final Fantasy I"
+  end
+
+  it "the root page uses an alternative title for the navigation" do
+    @item = @items_by_identifier['/']
+    navigation_menu.should include "Uutiset"
+    navigation_menu.should_not include "Final Fantasy Finland"
+  end
 
   it "when not on game's pages, game submenu is hidden" do
     pending # TODO

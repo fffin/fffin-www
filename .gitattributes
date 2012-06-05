@@ -2,6 +2,7 @@ Rules     eol=lf
 *.yaml    eol=lf
 *.xml     eol=lf
 *.rb      eol=lf
+*.sh      eol=lf
 *.html    eol=lf
 *.css     eol=lf
 *.js      eol=lf

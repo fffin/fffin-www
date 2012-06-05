@@ -4,6 +4,8 @@ require 'rspec'
 gem 'nokogiri', '= 1.5.2'
 require 'nokogiri'
 require 'open-uri'
+gem 'nanoc', '= 3.3.7'
+require 'nanoc'
 
 RSpec::Matchers.define :be_a_file do
   match do |actual|

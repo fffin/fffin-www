@@ -1,5 +1,3 @@
-require 'rubygems'
-gem 'nanoc', '= 3.3.7'
 require 'nanoc'
 
 # A few helpful tips about the Rules file:
